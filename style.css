@@ -1,0 +1,112 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #303F9F;
+  --dark-blue-hover: #152068;
+  --light-blue: #C5CAE9;
+  --orange: #ff9d00;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 2rem;
+}
+
+/* ------------------- Tab Section ------------------ */
+.draggable {
+  background-color: var(--white);
+  border: 2px solid #a7b4ff;
+}
+
+.hold {
+  border: 2px solid #a7b4ff;
+}
+
+.hovered {
+  background-color: var(--dark-blue-hover);
+  color: var(--white);
+  border-style: dashed;
+}
+
+.hovered a {
+  color: var(--white);
+}
+
+.invisible {
+  display: none;
+}
+
+.tab-item {
+  display: block;
+  padding: 1rem;
+  color: var(--black);
+  cursor: move;
+}
+
+.tab-item.dragging {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.active .tab-item {
+  color: var(--white);
+}
+
+.tab-section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.tab-section .tabs li:first-child {
+  margin-left: 0;
+}
+
+.tab-section .tabs li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .1rem;
+}
+
+.tab-section .tabs .active {
+  background-color: var(--dark-blue-hover);
+  color: var(--white);
+}
+
+.tab-section .tab-content {
+  border: 1px solid var(--dark-blue);
+  padding: 1rem;
+}
+
+.tab-section .tab-content .tab-pane {
+  display: none;
+}
+
+.tab-section .tab-content .active {
+  display: block;
+}
+
+.tab-section .tab-content .show {
+  opacity: 1;
+}
